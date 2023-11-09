@@ -1,26 +1,26 @@
 
-// const ingredients = [
-//   'Potatoes',
-//   'Mushrooms',
-//   'Garlic',
-//   'Tomato',
-//   'Herbs',
-//   'Condiments',
-// ];
+const ingredients = [
+  'Potatoes',
+  'Mushrooms',
+  'Garlic',
+  'Tomato',
+  'Herbs',
+  'Condiments',
+];
 
 
-// const list = document.querySelector('#ingredients');
-// const elements = [];
+const list = document.querySelector('#ingredients');
+const elements = [];
 
-// ingredients.forEach(value => {
-//   const listItem = document.createElement('li');
-//         listItem.textContent = value;
-//         listItem.classList.add('.item');
-//         elements.push(listItem);
+ingredients.forEach(value => {
+  const listItem = document.createElement('li');
+        listItem.textContent = value;
+        listItem.classList.add('.item');
+        elements.push(listItem);
 
-// })
+})
 // console.log(...elements);
-// list.append(...elements);
+list.append(...elements);
 
 
 // const magicBtn = document.querySelector('.js-magic-btn');
@@ -160,32 +160,32 @@
 //   onSale: true,
 // };
 
-import products from "./data/products.js";
-console.log(products);
+// import products from "./data/products.js";
+// console.log(products);
 
-const productsContainerEl = document.querySelector('.js-products');
+// const productsContainerEl = document.querySelector('.js-products');
 
-const makeProductCard = ({name, description, price}) => {
-const productEl = document.createElement('article');
-productEl.classList.add('product');
+// const makeProductCard = ({name, description, price}) => {
+// const productEl = document.createElement('article');
+// productEl.classList.add('product');
 
-const nameEl = document.createElement('h2');
-nameEl.textContent = name;
-nameEl.classList.add('product__name');
+// const nameEl = document.createElement('h2');
+// nameEl.textContent = name;
+// nameEl.classList.add('product__name');
 
-const descrEl = document.createElement('product__descr');
-descrEl.textContent = description;
-descrEl.classList.add('product__descr');
+// const descrEl = document.createElement('product__descr');
+// descrEl.textContent = description;
+// descrEl.classList.add('product__descr');
 
-const priceEl = document.createElement('p');
-priceEl.textContent = `Ціна: ${price} бабла`;
-  priceEl.classList.add('product__price');
+// const priceEl = document.createElement('p');
+// priceEl.textContent = `Ціна: ${price} бабла`;
+//   priceEl.classList.add('product__price');
   
-  productEl.append(nameEl, descrEl, priceEl);
-  return productEl;
-}
-// console.log(makeProductCard(products[2]));  
+//   productEl.append(nameEl, descrEl, priceEl);
+//   return productEl;
+// }
+// // console.log(makeProductCard(products[2]));  
 
-const elements = products.map(makeProductCard);
-console.log(elements);
-productsContainerEl.append(...elements);
+// const elements = products.map(makeProductCard);
+// console.log(elements);
+// productsContainerEl.append(...elements);
